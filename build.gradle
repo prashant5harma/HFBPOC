@@ -1,7 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+//    dependencies {
+//        compile 'com.indooratlas.android:indooratlas-android-sdk:2.7.0@aar'
+//    }
+//    repositories{
+//        maven {
+//            url "http://indooratlas-ltd.bintray.com/mvn-public"
+//        }
+//    }
     repositories {
         google()
         jcenter()

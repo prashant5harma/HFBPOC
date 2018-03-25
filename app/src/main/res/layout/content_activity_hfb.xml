@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -14,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="40dp"
-        android:layout_marginStart="21dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="36dp"
         android:text="Haptic Feedback View"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -41,7 +42,7 @@
     <Button
         android:id="@+id/btn_typ1"
         android:layout_width="183dp"
-        android:layout_height="70dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="70dp"
         android:text="Feedback A"
         app:layout_constraintBottom_toTopOf="@+id/btn_typ2"
@@ -52,12 +53,23 @@
     <Button
         android:id="@+id/btn_typ2"
         android:layout_width="180dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="165dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
         android:text="Feedback B"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_typ3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_typ1" />
+
+    <Button
+        android:id="@+id/btn_typ3"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:text="Indoor Atlas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_typ2" />
 
 </android.support.constraint.ConstraintLayout>
